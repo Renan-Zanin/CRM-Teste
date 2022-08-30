@@ -130,11 +130,7 @@ export default function UserList() {
                     </Td>
                     <Td>{dateFormat(client.created_at)}</Td>
                     <Td>
-                      <UpdateClientModal
-                        clientId={client.id}
-                        clientName={client.name}
-                        clientPhone={client.telephone}
-                      />
+                      <UpdateClientModal clientId={client.id} />
                     </Td>
                     <Td>
                       <DeleteButton
