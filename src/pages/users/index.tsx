@@ -45,7 +45,6 @@ export default function UserList() {
         client.name.toLocaleLowerCase().includes(search.toLowerCase())
       )
     );
-    console.log("filterdClients");
   }, [clients, search]);
 
   return (

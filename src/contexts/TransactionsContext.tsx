@@ -53,7 +53,6 @@ export function TransactionsProvider({ children }: TransactionsProviderProps) {
   const { id } = router.query;
 
   const fetchTransactions = useCallback(async () => {
-    console.log("transactions");
     const transactionsRef = collection(db, `clients/${id}/transactions`);
     await getDocs(transactionsRef)
       .then((response) => {
@@ -74,7 +73,6 @@ export function TransactionsProvider({ children }: TransactionsProviderProps) {
   }, [id]);
 
   const fetchClients = useCallback(async () => {
-    console.log("clients");
     const clientsColletionRef = collection(db, "clients");
     await getDocs(clientsColletionRef)
       .then((response) => {

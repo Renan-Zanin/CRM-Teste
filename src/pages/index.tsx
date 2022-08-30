@@ -18,7 +18,6 @@ const Home: NextPage = () => {
     if (user) {
       Router.push("/users");
     }
-    console.log(process.env.NEXT_PUBLIC_AUTH_DOMAIN);
   }, [user, loading]);
   return (
     <Flex w="100vw" h="100vh" align="center" justify="center">

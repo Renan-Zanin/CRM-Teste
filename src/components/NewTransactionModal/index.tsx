@@ -55,7 +55,7 @@ export function NewTransactionModal({ clientId }: NewTransactionProps) {
   function toastSuccess() {
     toast.success("Transação cadastrada com sucesso", {
       position: "top-right",
-      autoClose: 10000,
+      autoClose: 3000,
       hideProgressBar: false,
       closeOnClick: false,
       draggable: true,
@@ -66,7 +66,7 @@ export function NewTransactionModal({ clientId }: NewTransactionProps) {
   function toastError() {
     toast.error("Não foi possível cadastrar uma nova transação", {
       position: "top-right",
-      autoClose: 10000,
+      autoClose: 3000,
       hideProgressBar: false,
       closeOnClick: false,
       draggable: true,
