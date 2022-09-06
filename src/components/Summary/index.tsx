@@ -31,7 +31,7 @@ export function Summary() {
         <GridItem
           borderRadius={6}
           padding={8}
-          bg={summary.total < 0 ? "red.500" : "green.500"}
+          bg={summary.total < -0.001 ? "red.500" : "green.500"}
         >
           <Flex gap={4} align="center" justify="space-between">
             <Text>TOTAL</Text>
