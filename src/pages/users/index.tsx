@@ -41,9 +41,15 @@ export default function UserList() {
 
   useEffect(() => {
     setFilteredClients(
-      clients.filter((client) =>
-        client.name.toLocaleLowerCase().includes(search.toLowerCase())
-      )
+      clients
+        .filter((client) =>
+          client.name.toLocaleLowerCase().includes(search.toLowerCase())
+        )
+        .sort((a: any, b: any) => {
+          if (a.name.toUpperCase() > b.name.toUpperCase()) return 1;
+          if (a.name.toUpperCase() < b.name.toUpperCase()) return -1;
+          return 0;
+        })
     );
   }, [clients, search]);
 
