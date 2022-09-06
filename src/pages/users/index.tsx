@@ -19,8 +19,6 @@ import Link from "next/link";
 import { RiSearchLine } from "react-icons/ri";
 import { NewClientModal } from "../../components/NewClientModal";
 import { useContext, useEffect, useState } from "react";
-import { collection, getDocs } from "firebase/firestore";
-import { db } from "../../utils/firebaseUtils";
 import { dateFormat, telephoneFormatter } from "../../utils/formatter";
 import { TransactionsContext } from "../../contexts/TransactionsContext";
 import { UpdateClientModal } from "../../components/UpdateClientModal";

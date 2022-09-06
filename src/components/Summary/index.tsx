@@ -1,4 +1,4 @@
-import { Flex, Grid, GridItem, Heading, Icon, Text } from "@chakra-ui/react";
+import { Flex, Grid, GridItem, Icon, Text } from "@chakra-ui/react";
 import { MdArrowCircleUp, MdOutlineArrowCircleDown } from "react-icons/md";
 import { FiDollarSign } from "react-icons/fi";
 import { useSummary } from "../../hooks/useSummary";
