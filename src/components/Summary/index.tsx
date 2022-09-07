@@ -21,7 +21,7 @@ export function Summary() {
         </GridItem>
         <GridItem borderRadius={6} padding={8} bg="gray.700">
           <Flex gap={4} align="center" justify="space-between">
-            <Text>EM DÍVIDA</Text>
+            <Text>VALORES GASTOS</Text>
             <Icon as={MdOutlineArrowCircleDown} fontSize="32" color="red" />
           </Flex>
           <Text mt="4" fontSize="3xl" fontWeight="bold" color="red.500">
@@ -34,7 +34,7 @@ export function Summary() {
           bg={summary.total < -0.001 ? "red.500" : "green.500"}
         >
           <Flex gap={4} align="center" justify="space-between">
-            <Text>TOTAL</Text>
+            <Text>EM DÍVIDA</Text>
             <Icon as={FiDollarSign} fontSize="32" color="white" />
           </Flex>
           <Text mt="4" fontSize="3xl" fontWeight="bold">
